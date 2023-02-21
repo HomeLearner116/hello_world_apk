@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         body: Center(
           child: Text(
-            "Hello Worldhghg!",
+            "Hello World!",
             style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
           )
         ),
