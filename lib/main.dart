@@ -13,11 +13,39 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Hello World',
       home: Scaffold(
+        appBar: AppBar(
+          title: Text(
+            'Hello World App',
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontFamily: 'custom_fonts',
+            ),
+          ),
+        ),
         body: Center(
-          child: Text(
-            "Hello World!",
-            style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold, fontStyle: FontStyle.italic),
-          )
+          child: Container(
+            color: Colors.lightBlueAccent,
+            width: 200,
+            height: 80,
+            alignment: Alignment.center,
+            child: Text(
+              'Hello World!',
+              style: TextStyle(
+                fontSize: 18,
+                fontFamily: 'GoodTimes'
+              )
+            ),
+          ),
+          // child: Text(
+          //   "Hello World!",
+          //   style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold, fontStyle: FontStyle.italic),
+          // )
+        ),
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {
+
+          },
+          child: Icon(Icons.add),
         ),
       ),
     );
