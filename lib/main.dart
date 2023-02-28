@@ -29,10 +29,11 @@ class MyApp extends StatelessWidget {
             height: 80,
             alignment: Alignment.center,
             child: Text(
-              'Hello World!',
+              'halo',
+              textAlign: TextAlign.center,
               style: TextStyle(
-                fontSize: 18,
-                fontFamily: 'GoodTimes'
+                fontSize: 12,
+                fontFamily: 'GoodTimes',
               )
             ),
           ),
@@ -41,12 +42,12 @@ class MyApp extends StatelessWidget {
           //   style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold, fontStyle: FontStyle.italic),
           // )
         ),
-        floatingActionButton: FloatingActionButton(
-          onPressed: () {
-
-          },
-          child: Icon(Icons.add),
-        ),
+        // floatingActionButton: FloatingActionButton(
+        //   onPressed: () {
+        //
+        //   },
+        //   child: Icon(Icons.add),
+        // ),
       ),
     );
   }
